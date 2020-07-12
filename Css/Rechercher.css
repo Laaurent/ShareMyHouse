@@ -1,0 +1,158 @@
+/*------------------------------------------------------------------------------------*/
+/*-----------------------------     FEUILLE CSS RECHERCHER      -----------------------*/
+/*------------------------------------------------------------------------------------*/
+
+/*==========================
+    .Recherche_Header
+     |  Premiere div affiché quand on arrive sur la page rechercher.
+===========================*/
+.Recherche_Header {
+	width           : auto;
+	height          : 95vh;
+	margin-left     : auto;
+	margin-right    : auto;
+	background      : url("../Img/chalet.jpg") center;
+	background-size : cover;
+	position        : relative;
+}
+
+.Recherche_Header p{
+	position: absolute;
+	width: 35%;
+	padding: 2%;
+	border: 3px solid #FFFFFF;
+	margin           : 5% 5%;
+	font-size: 1.5em;
+	text-align: justify;
+}
+
+/*------  .Rechercher_header div ------*/
+.Formulaire {
+	float            : right;
+	margin           : 5% 8%;
+	width            : 40%;
+	height           : 80%;
+	background-color : rgba(255, 255, 255, 0.7);
+	border-radius    : 30px;
+	box-shadow       : 1px 1px 5px #1E1E1E;
+	text-align: center;
+}
+
+/*------  .Rechercher_header div h1 ------*/
+.Formulaire h1{
+	font-weight: normal;
+	font-family: "Cocogoose",sans-serif;
+	margin: 5% 5% 5%;
+	font-size: 3vh;
+	color: #3C3C3C;
+}
+
+/*------  .Rechercher_header div table ------*/
+.Formulaire table{
+	text-align: left;
+	width: 90%;
+	margin: auto auto;
+	color: #3C3C3C;
+	font-size: 1.5vh;
+}
+
+.Formulaire table td{
+	width: 50%;
+	padding: 1vh 1vw;
+}
+
+/*------  .Rechercher_header div table input ------*/
+.Formulaire table input, .Formulaire table select{
+	border        : none;
+	border-radius : 20px;
+	outline       : none;
+	color: #3C3C3C;
+	padding: 1vh ;
+	width: 88%;
+}
+#Lieux,#Mot_Clef{
+	width: 95%;
+}
+
+.Formulaire table input[type="submit"] {
+	display: block;
+	margin: auto auto;
+	background-color : #23C3FA;
+	color:#FFFFFF;
+	font-size        : 1em;
+}
+
+.Formulaire table input[type="submit"]:hover {
+	background-color : #239BD2;
+}
+
+/*------  .Formulaire a------*/
+.Formulaire a {
+	position : absolute;
+	width    : 60px;
+	height   : 60px;
+	top        : 95%;
+	left       : 50%;
+	transform  : translate(-50%, -50%);
+}
+
+/*==========================
+    .Affichage_Annonces
+     |  Div contenant des tables permettant l'affichage des annonces
+===========================*/
+.Affichage_Annonces {
+	width  : 80%;
+	margin : 2% auto 2%;
+}
+
+/*------  .Affichage_Annonces table ------*/
+.Affichage_Annonces table {
+	width           : 100%;
+	margin-bottom   : 25px;
+	border-bottom   : 3px solid #FFFFFF;
+	border-collapse : collapse;
+}
+
+.Affichage_Annonces td {
+	padding : 10px;
+	height  : 25%;
+
+}
+
+.Affichage_Annonces td.Note, .Affichage_Annonces td.Date_Fin, .Affichage_Annonces td.Type, .Affichage_Annonces td.Prix {
+	text-align : right;
+}
+
+.Affichage_Annonces td.Prix{
+	width:20%;
+	background-color:white;
+	color:#3C3C3C;
+	font-weight: bold;
+	font-size:1.5em;
+
+}
+/*------  .Affichage_Annonces table img ------*/
+.Affichage_Annonces td img {
+	vertical-align : -60%;
+	padding        : 8px;
+}
+
+.Affichage_Annonces td.Note img{
+	width: 8%;
+	margin: 0;
+}
+
+.Affichage_Annonces td.Image {
+	width : 25%;
+}
+
+.Affichage_Annonces td.Image:hover {
+	cursor: pointer;
+}
+
+/*------  .Affichage_Annonces table h1 ------*/
+.Affichage_Annonces table h1{
+	color: #239BD2;
+	display: inline;
+	font-weight: normal;
+}

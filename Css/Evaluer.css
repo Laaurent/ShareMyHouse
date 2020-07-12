@@ -1,0 +1,100 @@
+/*---------------------------------------------------------------------------------*/
+/*-----------------------------     FEUILLE CSS Evaluer      -----------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*=========
+    .Main_Annonce
+    |	Div principale de la page permet de noter l'annonce
+==========*/
+.Main_div{
+    width: 100%;
+    margin: 5vh auto;
+    height: 95vh;
+    background: url("../Img/Fade.png") center no-repeat;
+    background-size: cover;
+}
+
+/*------  .Main_Annonce p------*/
+.Main_div>p{
+    float            : right;
+    margin           : auto 8%;
+    width: 35%;
+    height           : auto;
+    padding: 2%;
+    border: 3px solid #FFFFFF;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+/*------  .Main_Annonce div------*/
+.Formulaire {
+    position: absolute;
+    float            : left;
+    margin           : 5% 8%;
+    width            : 40%;
+    height           : 80%;
+    background-color : rgba(255, 255, 255, 0.8);
+    border-radius    : 30px;
+    color: #3C3C3C;
+    text-align: center;
+}
+
+.Img {
+    float            : right;
+    margin           : 5% 8%;
+    width            : 40%;
+    height           : 52%;
+}
+
+/*------  .Main_Annonce div input------*/
+.Formulaire img{
+   margin: 1vh;
+}
+
+/*------  .Main_Annonce div input------*/
+.Formulaire input{
+    display: block;
+    margin: auto auto;
+    border        : none;
+    border-radius : 20px;
+    outline       : none;
+    color: #3C3C3C;
+    padding: 1vh ;
+    width: 50%;
+    text-align: center;
+}
+
+.Formulaire textarea{
+    resize: none;
+    width: 80%;
+    height: 20vh;
+    outline: none;
+    border: none;
+    border-radius : 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.Formulaire input[type=submit]{
+    margin: 9vh auto;
+    background-color : #23C3FA;
+    color:#FFFFFF;
+    font-size        : 1em;
+}
+
+.Formulaire input[type="submit"]:hover {
+    background-color : #239BD2;
+}
+
+/*------  .Main_Annonce div h1------*/
+.Formulaire h1{
+    font-family: "Cocogoose", sans-serif;
+    font-weight: normal;
+    color: #1E1E1E;
+}
+
+/*------  .Main_Annonce div p------*/
+.Formulaire p{
+    font-size: 0.8vw;
+    padding: 10px;
+}

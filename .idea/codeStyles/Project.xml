@@ -1,0 +1,12 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <CssCodeStyleSettings>
+      <option name="HEX_COLOR_UPPER_CASE" value="true" />
+      <option name="HEX_COLOR_LONG_FORMAT" value="true" />
+      <option name="VALUE_ALIGNMENT" value="1" />
+    </CssCodeStyleSettings>
+    <codeStyleSettings language="PHP">
+      <option name="SPACE_BEFORE_COMMA" value="true" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>

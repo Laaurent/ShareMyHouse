@@ -1,0 +1,67 @@
+/*---------------------------------------------------------------------------------*/
+/*-----------------------------     FEUILLE CSS BODY       -----------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*=========
+    Import de la police "Comfortaa" dans la font-family
+==========*/
+@font-face {
+    font-family : "Comfortaa",sans-serif;
+    src         : url("../Font/Comfortaa-Regular.ttf") format("truetype");
+    font-weight : normal;
+}
+
+@font-face {
+    font-family : "Comfortaa",sans-serif;
+    font-weight : bold;
+    src         : url("../Font/Comfortaa-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family : "Bebas",sans-serif;
+    font-weight : normal;
+    src         : url("../Font/BEBAS.ttf") format("truetype");
+}
+@font-face {
+    font-family : "Cocogoose",sans-serif;
+    font-weight : normal;
+    src         : url("../Font/Cocogoose.ttf") format("truetype");
+}
+
+/*==========
+    body
+    |   On definie les contraintes du body pour chaque page
+============*/
+body {
+    margin           : 50px 0 0 0;
+    background-color : rgb(30, 30, 30);
+    font-family      : "Comfortaa", sans-serif;
+    font-weight      : normal;
+    color            : #FFFFFF;
+}
+
+/*==========================
+    hr
+     |  Prorietes des hr
+===========================*/
+hr {
+    width  : 10%;
+    margin : 5vh auto;
+}
+
+
+/*============
+    Modification de l'apparence de la barre de Scroll
+===========*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color: rgb(50, 50, 50);
+}

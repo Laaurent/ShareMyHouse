@@ -1,0 +1,264 @@
+/*---------------------------------------------------------------------------------*/
+/*-----------------------------     FEUILLE CSS BODY_HOME       --------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*==========================
+    .Presentation_Body
+     |  Div centrale de la page Home. Presente le site
+===========================*/
+.Presentation_Body {
+    width           : auto;
+    height          : 95vh;
+    margin-left     : auto;
+    margin-right    : auto;
+    position        : relative;
+    overflow: hidden;
+}
+
+.Presentation_Body::after {
+    content : '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../Img/WIP.png") center;
+    background-size: cover;
+    animation: anim 25s linear infinite;
+    z-index: -1;
+}
+
+@keyframes  anim {
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+/*------  .Presentation div ------*/
+.Presentation_Body .Logo_Nom {
+    float   : right;
+    padding : 30px 50px;
+}
+
+.Presentation_Body .Slogan {
+    position : absolute;
+    margin   : 40vh 30px;
+    border   : 1px solid white;
+    width    : auto;
+}
+
+.Presentation_Body .Logo_Nom * {
+    display : inline-block;
+}
+
+/*------  .Presentation div img ------*/
+.Presentation_Body div img {
+    vertical-align : -50%;
+}
+
+/*------  .Presentation p ------*/
+.Presentation_Body p {
+    font-family : Cocogoose, sans-serif;
+    font-size   : 2.5vh;
+    line-height : 25px;
+}
+
+.Presentation_Body p.Slogan {
+    font-size   : 4vh;
+    line-height : 90%;
+    padding     : 1vh 1vw;
+}
+
+/*------  .Presentation a ------*/
+.Presentation_Body a {
+    position : absolute;
+    width    : 60px;
+    height   : 60px;
+    top        : 95%;
+    left       : 50%;
+    transform  : translate(-50%, -50%);
+}
+
+/*------  .Presentation a img ------*/
+.Presentation_Body img {
+    text-align    : center;
+    padding-right : 10px;
+}
+
+/*==========================
+    .Img_Body
+     |  Div de la page Home. Permet de rechercher ou proposer une annonce grace aux deux divs images
+===========================*/
+.Img_Body {
+    width        : auto;
+    height       : 100vh;
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+/*------  .Img_Body Div ------*/
+/* On place deux div dans la main div */
+.Img_Body > div {
+    display : inline-block;
+    position: relative;
+    width   : 50%;
+    height  : 100%;
+}
+
+/* div gauche */
+.Img_Left {
+    background : url("../Img/home1.jpg") center;
+}
+
+/* div droite */
+.Img_Right {
+    background : url("../Img/home2.jpg") center;
+}
+
+/*------  .Img_Body Div p ------*/
+.Img_Body p {
+    font-size   : 1em;
+    text-align  : center;
+    margin-top  : 70%;
+    font-weight : bold;
+}
+
+/*------  .Img_Body Div input ------*/
+.Img_Body div input {
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding          : 10px;
+    font-size        : 1em;
+    width            : 200px;
+    background-color : #23C3FA;
+    border           : none;
+    color            : #FFFFFF;
+    font-family      : "Comfortaa",sans-serif;
+    border-radius    : 5px;
+}
+
+.Img_Body div input:hover {
+    background-color : #239BD2;
+}
+
+/*------  .Img_Body Div div ------*/
+.White_div {
+    display          : inline-block;
+    background-color : rgba(255, 255, 255, 0);
+    color            : #FFFFFF;
+    height           : 100%;
+    width            : 100%;
+}
+
+/*------  .Img_Body a ------*/
+.Img_Left:hover .White_div, .Img_Right:hover .White_div {
+    background-color : rgba(255, 255, 255, 0.3);
+    color            : #808080;
+}
+
+/*==========================
+    .Desc_*
+     |  Div de la page Home. Permet de rechercher ou proposer une annonce grace aux deux divs images
+===========================*/
+div[class^="Desc"] {
+    width            : 100%;
+    background-color : #FFFFFF;
+    height           : 300px;
+    margin           : 10px auto 10px;
+}
+
+/*------  .Desc_* p ------*/
+div[class^="Desc"] p {
+    background-color : #FFFFFF;
+    color            : #1E1E1E;
+}
+
+.Desc_Lieu p {
+    float      : right;
+    padding    : 20px 10vw;
+    text-align : left;
+}
+
+.Desc_Commu p {
+    float      : left;
+    padding    : 20px 10vw;
+    text-align : left;
+}
+
+/*------  .Desc_* img ------*/
+div[class^="Desc"] img {
+    padding : 20px 10vw;
+}
+
+.Desc_Commu img {
+    float : right;
+}
+
+/*==========================
+    .Chiffres/.Info
+     |  Div donnant des statistiques sur le site.
+===========================*/
+.Chiffres, .Info {
+    text-align    : center;
+    margin-bottom : 10vh;
+}
+
+/*------  .Chiffres span ------*/
+.Chiffres span, .Info span {
+    display : inline-block;
+    padding : 0 100px;
+    color   : #969696;
+}
+
+.Info span {
+    text-align    : left;
+    margin-bottom : 10vh;
+}
+
+/*==========================
+    .Share
+     |  Div de fin de page
+===========================*/
+.Share {
+    width      : 1366px;
+    background : url("../Img/Share.jpg");
+    height     : 500px;
+    margin     : auto auto 10vh;;
+}
+
+/*------  .Share h1------*/
+.Share h1 {
+    font-family: "Cocogoose",sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    margin: 150px 90px auto;
+}
+
+/*------  .Share input ------*/
+.Share input {
+    font-family: "Comfortaa", sans-serif;
+    margin: 30px 90px;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+/*==========================
+    h
+     |  Prorietes des h
+===========================*/
+h1 {
+    font-size : 4vh
+}
+
+h2 {
+    font-size : 2.5vh;
+    color     : #FFFFFF;
+}

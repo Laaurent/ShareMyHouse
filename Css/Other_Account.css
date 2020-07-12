@@ -1,0 +1,280 @@
+/*------------------------------------------------------------------------------------*/
+/*-----------------------------     FEUILLE CSS My_Account      -----------------------*/
+/*------------------------------------------------------------------------------------*/
+
+/*==========================
+	.Main_Div
+	|  Div principale contenant la div des infos, la div des annonces, la div des messages
+===========================*/
+.Main_div{
+    width           : auto;
+    height          : 95vh;
+    margin-left     : auto;
+    margin-right    : auto;
+    position        : relative;
+}
+
+/*------  .Main_div div ------*/
+.Main_div_back{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position        : absolute;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.Main_div_Header{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: url("../Img/Fade.png")  center;
+    background-size: contain;
+}
+
+.Pop_up{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top        : 40%;
+    left       : 50%;
+    transform  : translate(-50%, -50%);
+    border: 2px solid #0DBAB0;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    z-index: 2;
+    color: #1E1E1E;
+    text-align: center;
+}
+
+.Gauche_Info{
+    position: absolute ;
+    width: 25%;
+    height: 90%;
+    top        : 50%;
+    left       : 15%;
+    transform  : translate(-50%, -50%);
+}
+
+.Droite_Contenu{
+    position: absolute;
+    width: 65%;
+    height: 75%;
+    top        : 50%;
+    right :-30%;
+    transform  : translate(-50%, -50%);
+}
+/*------  .Main_div div h1 ------*/
+.Pop_up p{
+    padding: 10px 20px;
+    font-family: "Cocogoose",sans-serif;
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+/*------  .Main_div div input ------*/
+.Pop_up input{
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+.Pop_up input[type=file]{
+    display: block;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+.Pop_up input[type=submit]{
+    padding: 10px 20px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    border: 2px solid #0DBAB0;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #0DBAB0;
+    transition: 2ms;
+}
+
+.Pop_up input[type=submit]:hover{
+    background-color: #0DBAB0;
+    color: #FFFFFF;
+}
+
+/*------  .Main_div div div ------*/
+.Gauche_Img_Info{
+    width: 100%;
+    height: 55%;
+    background-color: #FFFFFF;
+}
+
+/*------  .Main_div div div div ------*/
+.Img{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+
+    border-radius: 50%;
+    top        : 15%;
+    left 		:50%;
+    transform  : translate(-50%, -50%);
+}
+
+.Info{
+    position: absolute;
+    width: 85%;
+    height: 10vw;
+    top        : 40%;
+    left 		:50%;
+    transform  : translate(-50%, -50%);
+    text-align: center;
+}
+
+.Droite_Header{
+    width: 100%;
+    height: 11%;
+}
+
+.Droite_main{
+    position: relative;
+    width: 100%;
+    height: 95%;
+    border-bottom: 1px solid #323232;
+    overflow-y: scroll;
+}
+
+/*------  .Main_div div div div input------*/
+.Ajout_Img button{
+    position: absolute;
+    background: url("../Img/Plus_Rond.png") center;
+    background-size: cover;
+    width: 2vw;
+    height: 2vw;
+    border: none;
+    top        : 23%;
+    left 		:40%;
+    transform  : translate(-50%, -50%);
+    outline: none;
+}
+
+.Ajout_Img button:hover{
+    cursor: pointer;
+}
+
+/*------  .Main_div div div div p ------*/
+.Info{
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: #239BD2;
+    font-family: "Cocogoose_light",sans-serif;
+}
+
+.Info span{
+    font-size: 2vw;
+    text-transform: none;
+    color: #3C3C3C;
+}
+
+.Info img{
+    width : 5%
+}
+
+.Info hr{
+    margin: 2vh auto;
+}
+/*------  .Main_div div div div button ------*/
+.Droite_Header button{
+    border: none;
+    width: 20%;
+    margin-right:1% ;
+    height: 90%;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    text-align: left;
+    font-family: "Cocogoose_light",sans-serif;
+}
+.Droite_Header button:hover{
+    border-bottom:2px solid #FFFFFF;
+}
+
+/*------  .Main_div div div div table ------*/
+.Droite_main table{
+    visibility: hidden;
+    width: 100%;
+    background-color: #1E1E1E;
+    border-collapse: collapse;
+    margin-bottom   : 25px;
+    border-bottom   : 3px solid #FFFFFF;
+}
+
+.Droite_main table:hover {
+    background-color: #222222;
+}
+
+.Droite_main table#Annonces{
+    visibility: visible;
+}
+
+.Droite_main table td {
+    padding : 10px;
+    height  : 25%;
+
+}
+
+.Droite_main table td.Note, .Droite_main table td.Date_Fin, .Droite_main table td.Type, .Droite_main table td.Prix {
+    text-align : right;
+}
+
+.Droite_main table td.Prix{
+    width:20%;
+    background-color:white;
+    color:#3C3C3C;
+    font-weight: bold;
+    font-size:1.5em;
+
+}
+/*------  .Droite_main table table img ------*/
+.Droite_main table td img {
+    vertical-align : -60%;
+    padding        : 8px;
+}
+
+.Droite_main table td.Note img{
+    width: 8%;
+    margin: 0;
+}
+
+.Droite_main table td.Image {
+    width : 25%;
+}
+
+.Droite_main table td.Image:hover {
+    cursor: pointer;
+}
+
+/*------  .Droite_main table table h1 ------*/
+.Droite_main table table h1{
+    color: #239BD2;
+    display: inline;
+    font-weight: normal;
+
+}
+
+/*------  .Main_div div div div table a ------*/
+.Droite_main  table a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.Droite_main  table a:hover{
+    color: #D3D3D3;
+}
+
+.Droite_main table h1{
+    color: #239BD2;
+    display: inline;
+    font-weight: normal;
+}

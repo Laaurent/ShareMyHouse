@@ -1,0 +1,118 @@
+/*---------------------------------------------------------------------------------*/
+/*-----------------------------     FEUILLE CSS LOGIN       ---------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*==========================
+    .Title
+     |  Div presentant la page du site
+===========================*/
+.Title {
+    padding-top  : 2vh;
+    line-height  : 4px;
+    width        : 80%;
+    height       : auto;
+    margin : auto auto;
+}
+
+/*------  Title h1 ------*/
+/* On modifie la balise h1 */
+.Title h1 {
+    font-family: "Cocogoose",sans-serif;
+    font-weight: normal;
+    height: auto;
+    text-transform : uppercase;
+    font-size      : 3vw;
+}
+
+/*------  Title p ------*/
+/* On modifie la balise p */
+.Title p.Desc {
+    color     : #808080;
+    font-size : 1vw;
+}
+
+/*==========================
+    .Main_div
+    |  Div contenant le formulaire de connexion
+===========================*/
+.Main_div {
+    width            : 80%;
+    height           : 65vh;
+    margin           : 5vh auto 20vh;
+    background-color : rgb(210, 210, 210);
+    border-radius: 20px;
+}
+
+/*------  .Main_div div ------*/
+/* Chaque div prend la moitier de la grande et toute la hauteur */
+.Main_div div {
+    display   : inline-block;
+    width     : 50%;
+    height    : 100%;
+    font-size : 1vw;
+    color     : black;
+}
+
+/* La div de gauche */
+.Left {
+    float : left;
+}
+
+/* Celle de droite  */
+.Right {
+    float : right;
+}
+
+/*------  .Main_div div div ------*/
+/* On gere le padding et la taille des divs */
+.Right .Right_form, .Left .Left_form {
+    margin    : 5%;
+    width     : 90%;
+    height    : 90%;
+    font-size : 0.9em;
+}
+
+/*------  .Main_div div div input ------*/
+/* On gere la taille des input et les espaces entre */
+.Left_form input, .Right_form input {
+    padding       : 10px;
+    margin-bottom : 20px;
+    border        : none;
+    border-radius : 20px;
+    outline       : none;
+    color: #3C3C3C;
+}
+
+/* On gere la taille des inputs */
+.Right input.Identifiant, .Right input.Email, .Right input.Numero {
+    width : 90%;
+}
+
+/* On gere la taille des inputs */
+.Right input.Password, .Right input.Password2, .Right input.Prenom, .Right input.Nom, .Left_form input {
+    width : 43%;
+}
+
+/* On change l'apparance des boutons */
+.Left input.submit, .Right input.submit {
+    font-size        : 1em;
+    color            : white;
+    height           : 40px;
+    width            : 30%;
+    background-color : #23C3FA;
+    border-style     : none;
+    border-radius    : 4px;
+}
+
+/* Quand il eest survolé */
+.Left input.submit:hover, .Right input.submit:hover {
+    background-color : #239BD2;
+    color            : #D3D3D3;
+}
+
+/*------  .Main_div div div p ------*/
+/* en cas d'echec de connexion */
+p.Retour_Connection {
+    color   : #808080;
+    display : inline;
+}

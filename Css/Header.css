@@ -1,0 +1,130 @@
+/*---------------------------------------------------------------------------------*/
+/*-----------------------------     FEUILLE CSS HEADER       ---------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*==========================
+    nav
+     |  Declare la section de navigation ici une barre
+===========================*/
+
+nav {
+    width            : 100%;
+    height           : 50px;
+    top              : 0;
+    left             : 0;
+    position         : fixed;
+    background-color : rgb(40, 40, 40);
+    z-index          : 10;
+}
+
+/*------  nav a ------*/
+/* On enleve toute les formatages des liens */
+nav a {
+    display         : inline-block;
+    text-decoration : none;
+}
+
+/*------  nav ul ------*/
+/* On met l'ensemble des listes dans le coin haut gauche  */
+nav ul {
+    margin  : 0;
+    padding : 0;
+}
+
+/*------  nav ul li ------*/
+/* On place l'ensemble icon , recherche , propose a gauche  */
+nav > ul > li {
+    float    : left;
+    position : relative;
+}
+
+/* Et l'icon de contact a droite */
+nav > ul > li.Menu_Contact {
+    float : right;
+}
+
+/* On gere l'emplacement du texte des liens  */
+nav > ul > li.Menu_Proposer, nav > ul > li.Menu_Rechercher {
+    margin-top : 5px;
+}
+
+/*------  nav ul li a ------*/
+/* On gere l'emplacement du texte et sa couleur */
+nav > ul > li > a {
+    padding : 10px 20px;
+    color   : white;
+}
+
+/* Quand on survole chaque lien l'opacité diminue */
+nav > ul > li > a:hover {
+    opacity : 0.8;
+}
+
+/*------  nav ul li a ------*/
+nav  ul  li  img {
+    width: 50%;
+}
+
+/*------  nav li ------*/
+/* On suprime les balises des listes */
+nav li {
+    list-style-type : none;
+}
+
+/* On gere la taille et la position du submenu quand on le survole */
+nav li:hover .Submenu {
+    display  : inline-block;
+    position : absolute;
+    top      : 50px;
+    right    : 0;
+    padding  : 0;
+    z-index  : 20;
+}
+
+.Img_nav{
+    position: absolute;
+    width: 5.8vh;
+    height: 5.8vh;
+    left: 0;
+    top : 100%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 6px solid #282828;
+}
+
+/*==========================
+    .Submenu
+    | Div contenant les liens de redirection vers le compte, l'inscription,...
+===========================*/
+.Submenu {
+    display    : none;
+    text-align : right;
+    z-index    : 1;
+}
+
+/*------  .Submenu li ------*/
+/* On gere la couleur de fond de chaque liste du submenu et on lui met une bordure basse */
+.Submenu li {
+    border-bottom    : 2px solid #3C3C3C;
+    background-color : #464646;
+}
+
+/* Quand on survole la liste elle change de couleur */
+.Submenu li:hover {
+    background-color : #239AD1;
+}
+
+/* On arrondi le bord gauche de la derniere liste  */
+.Submenu li.last {
+    border-bottom-left-radius : 8px;
+}
+
+/*------  nav li a ------*/
+/* On gere l'emplacement des texte dans le submenu  */
+.Submenu li a {
+    padding   : 15px 30px;
+    font-size : 13px;
+    color     : #FFFFFF;
+    width     : 200px;
+}

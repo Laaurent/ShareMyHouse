@@ -1,0 +1,167 @@
+/*---------------------------------------------------------------------------------*/
+/*-----------------------------     FEUILLE CSS Recherche_Annonce       -----------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*=========
+    .Main_Annonce
+    |	Div principale de la page montre une image de l'annonce
+==========*/
+.Main_Annonce{
+	position:relative;
+	height: 95vh;
+	width:100%;
+}
+/*------  .Main_Annonce div------*/
+.Info_Proprio{
+	position: absolute;
+	top:85%;
+	right: 0;
+	width: 50%;
+	text-align: right;
+
+}
+.Info_Proprio *{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+
+}
+
+.Title{
+	font-family: Comfortaa,sans-serif;
+	position: absolute;
+	width: auto;
+	padding:0;
+	top:8%;
+	left:0;
+	background-color: rgba(30, 30, 30,0.7);
+
+}
+/*------  .Main_Annonce div img ------*/
+.Info_Proprio>img {
+	width: 5%;
+}
+
+/*------  .Main_Annonce div div ------*/
+.Img_proprio{
+	width: 8vh;
+	height: 8vh;
+	border-radius: 50%;
+	border: 5px solid #FFFFFF;
+}
+
+.Img_proprio:hover{
+	opacity: 0.8;
+}
+
+/*------  .Main_Annonce div a------*/
+.Main_Annonce>a {
+    position : absolute;
+    width    : 60px;
+    height   : 60px;
+    top        : 95%;
+    left       : 50%;
+    transform  : translate(-50%, -50%);
+}
+
+/*=========
+    .Info_Annonce
+    |	Div Secondaire de la page consiste a obtenir des information sur une annonce
+==========*/
+.Info_Annonce{
+	display: block;
+	margin: 50px auto;
+	height: auto;
+	width: 90%;
+}
+/*------  .Info_Annonce div ------*/
+.Info_Annonce div{
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	margin: auto 2.5%;
+
+}
+
+.Desc {
+	width: 60%;
+}
+
+.Carac{
+	width: 30%;
+}
+
+/*------  .Info_Annonce div div ------*/
+.Carac table{
+	color: lightgray;
+	width: 80%;
+	font-size: 1.5em;
+	margin: auto auto;
+	border-left: 2px solid #FFFFFF;
+	padding-left: 50px;
+}
+
+.Carac table td{
+	width: 50%;
+	padding: 5px;
+}
+
+.Carac table td.Img,.Carac table td.Prix{
+	text-align: center;
+}
+
+.Carac table td.Prix{
+	background-color: #239BD2;
+	color: #FFFFFF;
+	font-size: 2vw;
+	border-radius: 50vh;
+}
+
+.Carac table img{
+	width: 15%;
+}
+/*------  .Info_Annonce h1 ------*/
+.Info_Annonce form{
+	text-align: center;
+	margin: 2% auto;
+}
+
+.Info_Annonce form input{
+	padding: 10px;
+	margin: 1vh;
+	border        : none;
+	border-radius : 20px;
+	outline       : none;
+	color: #3C3C3C;
+	width: 10vw;
+}
+
+.Info_Annonce form input[type=submit]{
+	padding: 10px 20px;
+	margin: 1vh;
+	border        : none;
+	border-radius : 20px;
+	outline       : none;
+	font-size: 1.5em;
+	color: #FFFFFF;
+	background-color: #239BD2;
+	width: 10vw;
+}
+
+.Info_Annonce form input[type="submit"]:hover {
+	background-color : #239BD2;
+}
+
+/*------  .Info_Annonce h1 ------*/
+.Info_Annonce h1{
+	text-align: center;
+}
+
+/*=========
+    h
+    |	Propriétés balise h
+==========*/
+h1 {
+	padding   : 0 5%;
+	font-size : 2vw;
+}

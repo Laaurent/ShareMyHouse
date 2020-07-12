@@ -1,0 +1,188 @@
+/*------------------------------------------------------------------------------------*/
+/*-----------------------------     FEUILLE CSS PROPOSER      -----------------------*/
+/*------------------------------------------------------------------------------------*/
+
+/*==========================
+    .Intro
+     |  Div presentant la page du site
+===========================*/
+.Intro {
+    width           : auto;
+    height          : 95vh;
+    margin-left     : auto;
+    margin-right    : auto;
+    background      : url("../Img/Fade.png") center;
+    background-size : cover;
+    position        : relative;
+}
+
+/*------  .Intro h1 ------*/
+.Intro h1 {
+    position    : absolute;
+    text-align  : center;
+    top         : 5%;
+    left        : 50%;
+    width       : 100%;
+    transform   : translate(-50%); /* décalage de 50% de sa propre taille */
+    font-family : "Cocogoose",sans-serif;
+    font-weight : normal;
+    font-size   : 4vh;
+}
+
+/*------  .Intro hr ------*/
+.Intro hr {
+    position  : absolute;
+    width     : 15%;
+    top       : 15%;
+    left      : 50%;
+    transform : translate(-50%);
+}
+
+/*------  .Intro table ------*/
+.Intro table {
+    position   : absolute;
+    text-align : center;
+    top        : 50%;
+    left       : 50%;
+    transform  : translate(-50%, -50%);
+}
+
+.Intro td {
+    width : 10vw;
+}
+
+.Intro tr.Image {
+    height : 10vh;
+}
+
+.Intro tr:not(.Image) td {
+    padding : 5px;
+    color   : #FFFFFF;
+}
+
+.Intro td.Transition {
+    background      : url("../Img/Etapes/Transition.png") center no-repeat;
+    background-size : contain;
+}
+
+.Intro td.Etape {
+    cursor : pointer;
+}
+
+/*------  .Intro a ------*/
+.Intro a {
+    position  : absolute;
+    width     : 60px;
+    height    : 60px;
+    top       : 90%;
+    left      : 50%;
+    transform : translate(-50%, -50%);
+}
+
+/*==========================
+    div[class^="Etape"]
+    |  Div qui permettent a l'utilisateur de saisir les informations
+===========================*/
+div[class^="Etape_"] {
+    width      : 100%;
+    height     : 25vh;
+    margin     : 2vh auto;
+    text-align : center;
+}
+
+div.Etape_valide {
+    margin          : 10vh auto 10vh;
+    text-align      : center;
+    background      : url("../Img/Fade.png") center no-repeat;
+    background-size : cover;
+    width           : 80vw;
+    height          : auto;
+    padding-bottom: 2vh;
+    border-radius   : 20px;
+}
+
+/*------  div input ------*/
+div[class^="Etape_"] input {
+    margin        : 2% auto;
+    padding       : 10px;
+    width         : 30%;
+    border        : none;
+    border-radius : 20px;
+    outline       : none
+}
+
+div[class^="Etape_"] input[type="text"] {
+    width : 30%;
+}
+
+div[class^="Etape_"] textarea {
+    width         : 50%;
+    font-size     : 14px;
+    resize        : none;
+    border        : none;
+    border-radius : 20px;
+    outline       : none;
+    padding       : 10px;
+}
+
+div[class^="Etape_"] input[type="number"] {
+    width : 20%;
+}
+
+div[class^="Etape_"] input[type="date"] {
+    width  : 10%;
+    margin : 2% 2%;
+}
+
+div[class^="Etape_"] input[type="file"] {
+    width: auto;
+}
+
+.Etape_valide input[type="submit"] {
+    font-family   : "Comfortaa", sans-serif;
+    font-weight   : bold;
+    margin        : 1% auto;
+    border        : none;
+    padding       : 10px;
+    font-size     : 1em;
+    border-radius : 10px;
+    color         : #0DBAB0;
+    width         : 15%;
+    display: block;
+}
+
+.Etape_valide input[type="submit"]:hover {
+    background-color : #FFFFFF;
+    cursor           : pointer;
+}
+
+/*------  div h1 ------*/
+.Etape_valide h1 {
+    font-family : Cocogoose,sans-serif;
+    font-weight : normal;
+    display     : inline-block;
+    margin      : 20px 10px auto;
+    color       : #FFFFFF;
+}
+
+/*==========================
+    h
+     |  Prorietes des h
+===========================*/
+h1 {
+    font-size : 4vh
+}
+
+h2 {
+    font-size : 2.5vh;
+    color     : #FFFFFF;
+}
+
+/*==========================
+    p
+     |  Prorietes des p
+===========================*/
+p {
+    font-size : 1.5vh;
+    color     : #D3D3D3;
+}
